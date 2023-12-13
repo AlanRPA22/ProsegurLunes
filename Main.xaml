@@ -1,0 +1,404 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="932,6784.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ueabf="clr-namespace:UiPath.Excel.Activities.Business.Filter;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business.Filter</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="942.4,6720" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="880,6608" sap2010:WorkflowViewState.IdRef="Sequence_7">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Utilizar Navegador Chrome: Bienvenido a la solución de Cash &amp; Logistics" sap:VirtualizedContainerService.HintSize="817.6,6496" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="211add8e-103d-4185-8778-ebe9b4562bd3" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="784,6279.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="Datetime" />
+                <Variable x:TypeArguments="sd:DataTable" Name="ProsegurDF" />
+                <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                <Variable x:TypeArguments="x:String" Name="Datetime2" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Delay Duration="00:00:03.5000000" sap:VirtualizedContainerService.HintSize="721.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              <uix:NSetText DisplayName="Establecer texto 'Id. de usuario *'" sap:VirtualizedContainerService.HintSize="721.6,163.2" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="211add8e-103d-4185-8778-ebe9b4562bd3" Text="AR_jose.oitana" Version="V3">
+                <uix:NSetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://web2.miprosegur.com/corpointweb/" CvType="InputBox" DesignTimeRectangle="1144, 467, 153, 28" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT ext-comp-1002'" FullSelectorArgument="&lt;webctrl id='ext-comp-1002' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ext-comp-1002' tag='INPUT' type='text' class=' x-form-text x-form-field clfw-reqdfield-css  x-form-invalid  x-form-focus' aaname='Id. de usuario *:' /&gt;" Guid="e55cf6b4-67dc-4223-937c-37c605343b49" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJ0AAAAgCAYAAAAIcnp9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACPSURBVHhe7dwxDoQgAEVBjubNPRraqFtsY4Kvmp9MQqB9NWOaxROd5buj28c2t7HPcd7AF649x/sF1hMdOdGREx050ZETHblX0Q0hsoDoyImOnOjIiY6c6MiJjpzoyImOnOjIiY6c6MiJjpzoyImO3KvoYAXRkRMdOdGREx25v9H5VoKvXfs5mjUTncWb8wA2U+1QSw+tnQAAAABJRU5ErkJggg==" InformativeScreenshot="a198a920034c37e07238f7338b860a98.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido a la solución de Cash &amp;amp; Logistics' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="941, 467, 166, 25" ElementType="Text" FriendlyName="'Id. de usuario *'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='x-form-item-label' aaname='Id. de usuario :' check:innerText='Id. de usuario *:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKoAAAAdCAYAAAA6ufdPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJNSURBVHhe7ZjhkYQgDEbp0LIsxVIsxTK4AEEgIKirP3J+b4a5VSFAeMLtGguAAiAqUAFEBSqAqEAFEBWoAKICFUBUoAKIClQAUYEKPifqOhtr5pWvWqx2NsZ2q4zYFjuZyS4bX/8Txrk7wTLZO8mFqBUQ9RXWmWwjSRf6O7vPpN6FBEHUCoj6HpSQiZSbFr4+D0RlMQ2XaVmui+rFTDFmiiFF9f3udfoSb3Q8GlrMvEp1j3aoFI9KNuBb7alM2aDceGMu3DMXvsqdmHd/AyDcruokpTgpARv9N1D23eLjooYkVde8MOcIoqdER/GjjLIPwktyLOtQtGrHLk+B6+35eXYvvFhlnSJ3LHqaFs+7lzgnqHtM/XthL/BtUX2yZ5+7Hd4levnOaUkR4vIi+3iiD6LanTKGov0qegshrx+fqJ+PuTn+Vj4f4tOithev3J1GNBcsX3TeeZrloJOxaGnnb8U5L2rc/WMRooq46d7Rce3iHb9AvwBRXxbV93FxlzkvGpG/CJ15Fff41HBtdtlaO6qY11BUEeNJcPS/ffTnn0/SiunH3RI1ks1l1H44Zn/ZE7X9PMTA0f8IZYLlF510pMo1OCbswMMvU4UYso3AL3g2hrgDxhgN+Yt5Ddp7UXOh4vMLolZ9xHmLNk/xcVEdSU5Xqp+nTh1nUc5Q6p+nyj5CP92ALBPXJ8FWsQsWz7lOHnHU3udhb+/GWr48Q1Edu+BcbkkacjPKx+dEBTqBqEAFEBWoAKICFUBUoAKIClQAUYEKICpQAUQFCrD2Dzh4BxQUU+6BAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSetText.Target>
+              </uix:NSetText>
+              <uix:NSetText DisplayName="Establecer texto 'Contraseña *'" sap:VirtualizedContainerService.HintSize="721.6,163.2" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="211add8e-103d-4185-8778-ebe9b4562bd3" Text="renegade" Version="V3">
+                <uix:NSetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://web2.miprosegur.com/corpointweb/" CvType="InputBox" DesignTimeRectangle="1144, 500, 153, 28" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FriendlyName="'INPUT ext-comp-1003'" FullSelectorArgument="&lt;webctrl id='ext-comp-1003' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ext-comp-1003' tag='INPUT' type='password' class=' x-form-text x-form-field clfw-reqdfield-css' aaname='Contraseña *:' /&gt;" Guid="edfe5f9e-2ecf-4783-9414-0db43b1f81db" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJ0AAAAgCAYAAAAIcnp9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADUSURBVHhe7ds9SgRBFIXRWZGBy3QB7kRwB7oKE0EQVJCmnXZ+uu1kNJEXvb7ROfBBBRVeKqvdAmFGR9zv6N6urpeHm9vl7v5R2qSLv5dutx7Xnp5fpPbK0b2+f0jtlaP7HAapvXJ0wzhK7ZWjG/d7qb1ydF/TJLVXjm46HKT2ytF9H49Se+XoTqez1F49uvN6SWquHN08z1J75ehgC0ZHnNERZ3TEGR1xRkec0RFndMQZHXFGR5zREWd0xBkdcUZH3L+j88NfW3fhaSPO6IgzOsKW5QemmhcZFf7UpAAAAABJRU5ErkJggg==" InformativeScreenshot="049f2ebba9a03310575376c2b839d36a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido a la solución de Cash &amp;amp; Logistics' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="Contrasena **" CvType="Text" DesignTimeRectangle="941, 500, 166, 25" ElementType="Text" FriendlyName="'Contraseña *'" FullSelectorArgument="&lt;webctrl aaname='Contraseña :' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Contraseña :' tag='LABEL' type='' class='x-form-item-label' check:innerText='Contraseña *:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKoAAAAdCAYAAAA6ufdPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJ9SURBVHhe7ZcNkoMgDEa9ocfyKB7Fo/QYbiBBkoCCtp0tM9+bYbbyVzCP0J12AAYAooIhgKhgCCAqGAKICoYAooIhgKhgCCAqGAKICoYAot7hte7zNO2TKssmbR9l27evzHuP1zrzPuMmt32Z5n19cdtjaM4nLw2idrItQUwXKBF3fjt6miDEtw7AHbKYVtiHbAvZRpKu9HcJn0m9G+8NovZAL7mQNHHV9ohfEfUb0EuaSbl5led+IGoHMZveMIezbypW4pidKFBbylKxLKRngCU96uN3SmajTGT6Vn6G2DW6uY7vSLzoFj5vT3s2e6F16/No9xlK48CGrBokpXG5I6+jdStB1CZ9L5KR4KuA8rWZA5iu0TyfjDkk8xlVhDOS+D5EzOyprlyzPWw8XrfzurKsSUK/jjQmHTg1Q7H3giBomI8OGU3EdZ1A1CYcACPFGTHL+axipfFCBGzQ66JqqerocY0xQepCKLvOKKrrY2UvKeX9HBC1SZmdTolZzV+xEkAJcC2YPaLW/ZAsRu2ppH5xzqO+cjDUGF2MqO5Lq6JKJj8KRP0/rjOJyrgnourxnxGV66IYR8OZ0KqvrC2upyFUS9Qsu/tZA1H/keqVLkQ5pa336n9X1NqBkH+uSlETeR6WrDxQmmtR67dMzwF4CkTtJAbBSyhy5IDJVayCxVJcZx1b5yU4E1WvJWdN7sfPRiQjt/TXkzrRe0TV7bxPqoOoP0AMNgVDFRfLCEudipW7LaoPekVU4ugjZdmcPCJe7uMzfZY7zyFNxLWo8cmOD2stDlAP9ezsgahgCCAqGAKICoYAooIhgKhgCCAqGAKICoYAooIhgKhgAPb9D6wWFyRSnKJ+AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSetText.Target>
+              </uix:NSetText>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Iniciar sesión'" sap:VirtualizedContainerService.HintSize="721.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="211add8e-103d-4185-8778-ebe9b4562bd3" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://web2.miprosegur.com/corpointweb/cl/login.mvc?msg=logout" CvElementArea="1212, 529, 97, 29" CvTextArea="1219, 535, 81, 15" CvTextArgument="Iniciar sesion" CvType="Button" DesignTimeRectangle="1216, 533, 88, 20" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Iniciar sesión'" FullSelectorArgument="&lt;webctrl id='clentLoginBtn' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='ext-gen14' tableRow='2' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='clentLoginBtn' tag='TABLE' /&gt;&lt;webctrl id='ext-gen14' type='button' tag='BUTTON' class='x-btn-text ' aaname='Iniciar sesión' check:innerText='Iniciar sesión' /&gt;" Guid="1940baff-8280-46f5-8905-27e6ecfd1d59" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAYCAYAAAB3JpoiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOuSURBVGhD7ZRNS1tBFIbzn+7PEYQUwQ/c6MJNXLgQQYgrd7Eb7UIw4MIk3VSktFoSbWgJFT+S2qgQtakxGo2f9XTmzMydM/eOtwpeu+hdPDBnznvmnHkzubH5z2fwdfccqo3biBDhHr/71oLY+40W7DdvoHENESHCPS5WLyB20LyE702AL3vtiBDhHnPTY617wOBH8z4iRLjHP68AYmfc8JOIl0AY/hugYklGPC/c4yNqeET4HF0yw0+Z4eWGXRBBWEmC4zgwvGLJPQLusWG4nzq87nbg1WzdkvOzNtsPTvcCrFlylMfq/h0lGJbG0v23o/69p3KoDN9mgZ86TDHD48xwe/5/og6rFdv+00DDm3f2pM/wygLEnSRM8RfKXgDCXuqq1K/Kl2vESuf0w5Qc2KvLsZejdYzRkuiHL430IzUa8Rr9tYKHZgjO6RcuYuGDqyU98IzRBSMf9EBdw7csSbvhtKEYTOUNI/F7l4Qc6syY6tBsaiT5TrpmekzUeP+BZmzMw6EzBcxnGi7NdmcwY/WjuT8OnmP+sAru8UFbGX4sNkzqkJIXwBgN74cUO0xpstww1pyvC/KCBW+dB63z57bYZRPsAgl2AXNtI6gPrzVn5fB5US8NzpKchvS16YgP/rsEzMw8Ng33QS7E47JsVNYa13C2dpsfy6bLWkfROs8eq1GI2uBzkGVuiKyjZ+Ks+jyKuI+4m9oze+i+tllFXvjgzwfPjIaf3AJsssCPNhxjYrjSZKThfJ2XzfOkqdJRtE6u8dJJyGCe1gafY0AN5vNYZn0IvAPWKr3uS2fVNTwvtP588My1C2l4ce8KivvXHmow2eVA53RNxKV56HT6YLKkNekRNuhIEddL033gdM3DkrfOg1c3tEjzRRhiA4s9un4ki+PMuHFIP7mWzkxq3fOIlvig76LyAX2Zx3und8LwD5tnFqqQjDvQkaqKOD8HHU4PJPNaM5NghifyuM6mesCJz0GW5zJjbNAxmJE6Wqt1nvNlzF/bQIbHeRhw1za89ZZ56Az0vID5zL5yJnmmNzbujATPvHN8A7EGM/zjVsvCLkzghXZFXEizoXphoqA1b/CCBVznUr2seRpyMocxa64YzJJ9pcMzqUb0FGcWYJDUWfHU0/4cnI/k6VkP57x95UxKK+/L8d75bzPvNIjhyxGhog2/AbG5fR4RJspw9lnBjZXyRUSIcI932OcEDbcJIp4f1/BPlXbEC4CGr++fwsYvgPXD64gQQY9rbfgDHhEqgEYUvC0AAAAASUVORK5CYII=" InformativeScreenshot="775ee089e68da03f09b33d76a3c249fb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido a la solución de Cash &amp;amp; Logistics' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="Acerca de" CvType="Text" DesignTimeRectangle="1241, 617, 66, 15" ElementType="Text" FriendlyName="'Acerca de'" FullSelectorArgument="&lt;webctrl tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='' aaname='Acerca de' check:innerText='Acerca de' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAATCAYAAAAtbXvAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGkSURBVFhH7ZTbjcQgDEW32nRBGdRCGZSRMpg4fhsTrbL7MxJXsoQAG/tg+BlbqTaYhTaYhTaYhTaYhVIwvR7jOMDKaCdNfq3O0QrUUkenmd8oAdNHvaGgla8n809gzlYQSK2jAJzSrtBRHt5R/ZHacWA2Ifaro/Ie8uVz0UKn9mrWwJ6LtLFK6zOYs2FtsmeuMIBhupCYHdPyrQCFjQr0UMgE7uwLbh4KG50bihALlyGaILIRmEW8GM6DYScqRLrHkJEiJJJ2Qeex6TLej9sVjCbCc3oB2bmikKMXX6bxFRAIxucDmnMGOTBTQkkS3BGR8K3FbYBhTAuR9FiolUK9Ld2fxBdYOJd29OTjwCjtzBjEWzDYYS/AxPXH/X8B478MBbN8m2REQp6SJGb/IkpsVWSaOM8Z2JzLNTF1Ma+lZyRPSerCM+enlEvAMEkJyJIu4GK0EGd0Un4jfBsZGAM78cnXLlvBf/n56p+JIjCcsG8nlN6C+gY4IckIZ/bzYEARgPr4Jw7zGD/LFeVi1eae0q0IJ4HsPt8t1Qaz0Aaz0AaTaowP+Ua3PeITSgQAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Transacciones del'" sap:VirtualizedContainerService.HintSize="721.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="211add8e-103d-4185-8778-ebe9b4562bd3" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://web2.miprosegur.com/corpointweb/main.do" CvTextArgument="Transacciones del" CvType="Text" DesignTimeRectangle="872, 340, 122, 15" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Transacciones del'" Guid="08f142d9-efa9-485e-a03f-5f95981a8c4c" InformativeScreenshot="1936f9828f3dda192cf8f5c1e830742c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido a la solución de Cash &amp;amp; Logistics' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvElementArea="860, 293, 218, 33" CvTextArea="872, 301, 80, 18" CvTextArgument="Maquinas" CvType="Button" DesignTimeRectangle="874, 299, 78, 19" ElementType="Text" FriendlyName="'Máquinas'" FullSelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='x-panel-header-text' aaname='Máquinas' check:innerText='Máquinas' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAXCAYAAACYuRhEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALqSURBVFhH7ZLNiuJAFIXr0UwW8WVElF7EeQERzU5xLSJKr5TZCYJkraLQKLgTQem3OJOf+rmVVDIZdPpnJosP4rnn3rp1LPb+/o6SxymDfBJlkE+iDPJJsPv9jpLHYbfbDSWPUwb5JLQg98MqGGOcKoZ73XzbD1GVdYbqcK/XI37ih/BUh9in6s/kI8/Kh12vVwi2A0eGFOIMtrJWpH69LtDitdaC6n8LdR5zBtgaPR9DbpD6clsMHFILSAf5/5IfJHMw2PL6opWo0SDJy9BoYUHmZ80RiFdM91Av2/T6fq8NWvw7gtwncQ4l/UDSjyiitZAedrlcINj01WDXdeNvdx7V5m6oO4GuPE5/w3vncJmLuZy1QV8eTPQ5nxngzrM1bQ/hi87gM50+NkW0gLjfvE94jrpDANlFvxvv5VlIL/nNdrsdBMt2RQ6qjUaoRd81jHb8u9LGiHgq7aXsTTGqkVmhtkS7Ev8O5ywzfck9uE/sECL7i2p0ZgXtpZiZJL2jeZc07HA4QLDqWLKpPl6hY8XflhXrVmelecLftH9cj/Uk9XFQX3VgCa0+Vn3juu4LNH0P7juMUecaszpY/ZGWNTOA7kXhvbRPoPVz2NvbGwTrrmpqTPTfjFnornXN6q7j3nVXLWN1sQ61SUP6wlmapzGRZ6Z8hj1i7wQNrskzCmvmmZMG90ltjS5/PKqXaAnk/QNygzQFZApSLRSHHc376kEa9zEFKTAF2sCE1/ODJM0itPwg1eB0QOSCXyxI9bLyghTQQEmQx+MRAr9ncwNDc6r0LI/d81Na3OejZ4vD1Czls9Hzs31Hvweba6YzmN2DH/qOUzQLaaYdDb5pU3qEFvU1p9GMrN1C2Ol0gsD3yGEzpWd5bM+X+qzJF4iw4XlqKTqrqO80I5cKsD2PXNyDH/lmBbWMu/meDCWi6cETfyzvpX2UZD5akJ8CCSzrz/sOlEE+CXY+n/GpvL7IIF9eDfVvwucH+U9wxi/e0W/P4ECYvgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="721.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[Datetime]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[Now.AddDays(-3).ToString("dd/MM/yyyy")]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="721.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_3">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[Datetime2]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[Now.AddDays(-1).ToString("dd/MM/yyyy")]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <uix:NSetText DisplayName="Desde" sap:VirtualizedContainerService.HintSize="721.6,163.2" sap2010:WorkflowViewState.IdRef="NSetText_3" ScopeIdentifier="211add8e-103d-4185-8778-ebe9b4562bd3" Text="[Datetime]" Version="V3">
+                <uix:NSetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://web2.miprosegur.com/corpointweb/corpointHome.mvc?CLENT_CSRF_TOKEN=464a19505d7f4698b608a629c40c2b0c&amp;mainContainer=true" CvElementArea="848, 274, 117, 26" CvTextArea="852, 280, 70, 13" CvTextArgument="13/08/2023" CvType="InputBox" DesignTimeRectangle="849, 274, 116, 25" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'13/08/2023'" FullSelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl parentid='ext-gen149' tableCol='1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='tranFromDate' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl parentid='ext-gen149' tag='TABLE' /&gt;&lt;webctrl id='tranFromDate' type='text' tag='INPUT' class=' x-form-text x-form-field' aaname='' /&gt;" Guid="d5e30fbe-64c7-477f-8494-b508341ef9af" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHgAAAAdCAYAAABhXag7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMUSURBVGhD7ZbLbuowEEDzheGnSL4E8hndkOyhlRCoC6SILFBbHtJtVSHQ3MyM43gcQ+ljESwvjooz4wdzPKHR/t87BPwlCPacINhztODpdBrwiIeHB0IILssy4AHocrPZEELwy8tLwAPQ5cfHByEEHw6HgAeYLoNgD0GX+/2eEIKbtg7cN0Gw56DL3W5HCMGfn58BD0CX2+2WEIKPx+NFylEM0XBiPS9hFEcQRUw8Kq34ESbDCIYTNZ4MdW4UxTAqzdwJDHWsprNXDc5Xz+k8F9ey40OYGLFjOYJYxxznFue05t4B3xasiyWKruTqZyxIy9TPVIGoqIYIKmJTPHstHtuFby4Ln8covFirO6b8eAQljpXc9pzWuWlue04x905Al29vb4QQfDqdJOuxuukJJEn9N8mtWAzjdZuf2zl5osed2GkN41pikuPnHJJ6H/7MrMd1YUU+5iSQq3nxeG3EzLVccZzLZ6V14zGsdUzu1Tmn43v2HXT5+vpKCMHn81lSZZAV/LlI6y+eFt0cTQFpLSlV+QjO4XEF2SCCQVbpWBPnNTneru/IL9Ir+5t7d89xaf+Ga9+tygYQDTKoHLG+crtgg8tFUHKw00Ucnw8gq9ocWXRVPGMO7YHrdARx7iVBUgIKbvZtwbWd8+tLPHDk04WiszhiPQddrlYr4g8Et4hCY+F00b8SzF3XClCXRu9nXhYJrSEkfEMwyb3c2YzrjdBv0OXz8zPxp4LNbpAdx8LsQuo1qVtSKIyY6CxxWVq6cpEbX9E3yWVu+u49Al0ul0vi54KvSul2XLdIXHQS8YVgeVkYWs+eQ7guk9XV6vXb7covLqLxrM+gy8ViQfyig+1i8JhzsKBXOhLHQip3nXst3tuUwZ3rkquwLgzlmz8d11659mWjsbysfQddzudz4pevaBbT/GOk41iUTq56rvPtollriX+aTJlWnoHZeXwJmlg7nzvfgfETIOfel1zkR4ID9wO6fHp6IoJgDwmCPQddPj4+EkGwh6DL2WxGBMEeEgR7DrpsEIID/tB41YIDPvIO/wHgOky07PTQFQAAAABJRU5ErkJggg==" InformativeScreenshot="3e3c9fbc7367b1ac158d185a5f9eaca6.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido a la solución de Cash &amp;amp; Logistics' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="Desde" CvType="Text" DesignTimeRectangle="802, 275, 45, 23" ElementType="Text" FriendlyName="'Desde'" FullSelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl parentid='ext-gen149' tableCol='1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='ext-comp-1031' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl parentid='ext-gen149' tag='TABLE' /&gt;&lt;webctrl id='ext-comp-1031' type='' tag='DIV' class='xtb-text' aaname='Desde' check:innerText='Desde' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAbCAYAAADVq2dMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEwSURBVFhH7ZRdDoMgDIC5n9zJ6D2WcA8TPYcPeoY9zOdOFLAURJ1uwYWHL1ksP/1oO/Z8DXB3kkQsJIlYSBKxkCRiwSPRQM4YMAcOj46uvYhOQHbi/BUJz4F1+T2Rn0mMtIID4wJa841UrWjQ+lBsgKpYYllREokeHhztte50OSQxv1gJlVnHIK91fL44Ez35TWNKwCSmE9Z30r1qPXkEzDEJFJuqQg82km4iC1R+BLeTbFvn5UM5nZDA7WCjKjXNkPqGk/L2P3kc6zzNVRKonbZKbJj2qETk+j0SGzNA+XiwD182VUY+gDx/o53M3O1jv4TzFzsng/t+EQsPp/0A/sG2qrwhtiKhym/hOQS3igRXJhQbwTOVC9piNIdwZTwS9yNJxEKSiIUkEQt/IDHAG7dhk1PEAcgwAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSetText.Target>
+              </uix:NSetText>
+              <uix:NSetText DisplayName="Hasta" sap:VirtualizedContainerService.HintSize="721.6,163.2" sap2010:WorkflowViewState.IdRef="NSetText_4" ScopeIdentifier="211add8e-103d-4185-8778-ebe9b4562bd3" Text="[Datetime2]" Version="V3">
+                <uix:NSetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://web2.miprosegur.com/corpointweb/corpointHome.mvc?CLENT_CSRF_TOKEN=b97d284dee674a6cab68ad87aebd3bec&amp;mainContainer=true" CvElementArea="1030, 274, 119, 27" CvTextArea="1036, 280, 70, 13" CvTextArgument="14/08/2023" CvType="InputBox" DesignTimeRectangle="1032, 274, 116, 25" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'14/08/2023'" FullSelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl parentid='ext-gen149' tableCol='1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='tranToDate' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl parentid='ext-gen149' tag='TABLE' /&gt;&lt;webctrl id='tranToDate' type='text' tag='INPUT' class=' x-form-text x-form-field' aaname='' /&gt;" Guid="5b51a40e-435d-4008-b235-3b4d578b4534" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHgAAAAdCAYAAABhXag7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMPSURBVGhD7ZXdjqowEIB5Qnwp4EmAx/AGuHc1MRovTAhcGP+TXWOMpoeZ/tCWotk1J8GmF18WOu20zjdlvdP3D3HYixNsOU6w5QjBk8nEYRHj8RhRBJdl6bAAcLnZbBBF8Ha7dVgAuLxcLogi+Hw+OyxAdukEWwi4PJ1OiCKYX2vHZ+MEWw64PB6PiCL4er06LABcHg4HRBF8u92ekJHA80lcmmJASWLfI35cquNlTHw/JiW+Qw6PeAx9bhn7IuYZ94I9+LiaywsydW4WPM2VBdJaLyCZFOO/hcc7v2ng/EEwL2a/YC7HJI2O6Q1AcwYZm4tCpPz4rhVeNAtd2+bScsO8J7lQrmg6dnbxzuSKhtHO+QGAy/1+jyiC7/d7hzxkXRyGWLSk6s65V0lT+JCEUOSkkmIVSZobh2vysMkTklxaVyVNYcO8ffYTUol4TkJtP5iD+Q25cIytxzOzvBQ4h0fCHJ4hL3/mSHvBb9H27eYbNuByt9shiuDH49GhSFNSw3OdkpE3Immtz6lJOoJx+OuRUVq3MVgzouvrdEQ89iziRdSIikghnqX8cgzh+/B3lTa/4RwNRdRIigplTND724CCRE1DRIUpNkx+JVjQVwQQgYUzFFbEmAC9wJhTkojv9IvRaQYstCxcj3EJ9By6EOP+DLN8mgfP0rNuqIDL9XqNvClYLnpXMBSOF/qVYIzLAk032lhoKreN/U4wyu1tHAqu7TTccAGXq9UKeUuwLLArWL1xxiKJz3C3OQD5Zql7cXS5wOtcytgLuYixuYcLuFwul8gbgllxTUAh9RsnZPL18q16JUVtFgTP010DdGXqt5q+G2+l4ZyfKHixWCDv/w8WqJJAnlp8XSJtEOUTLhcWC832g70VGXStSS6in1WThg3Q+8nVz8maQWmYYQMu5/M58p8Ew7NprnrrdUFUchuX5ctz9XkteoPwceks+DvkNS3tDde+Th8kF/ibYMfHAC5nsxniBFuIE2w54HI6nSJOsIWAy6+vL8QJthAn2HLAJUcR7LAH7lUIdtjID/kHs/xPEmLGCl0AAAAASUVORK5CYII=" InformativeScreenshot="5a4a00278036870eea8acbd2734969be.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido a la solución de Cash &amp;amp; Logistics' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="Hasta" CvType="Text" DesignTimeRectangle="989, 275, 41, 23" ElementType="Text" FriendlyName="'Hasta'" FullSelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl parentid='ext-gen149' tableCol='1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='ext-comp-1034' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl parentid='ext-gen149' tag='TABLE' /&gt;&lt;webctrl id='ext-comp-1034' type='' tag='DIV' class='xtb-text' aaname='Hasta' check:innerText='Hasta' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC0AAAAbCAYAAADoOQYqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAETSURBVFhH7ZRRDoMgDIa5n97J6D1MuIeJnsMHPcMe5nMnrEDpYHMmkJnx8D9QaPu1/lHc7htcTQU6lwp0LhXoXCrQuRSAXqGvBTQjj+8aOxCig4HHv5WqU0uYQ3cH9IfQi4RKiD1mVEO/uPdDS+8wT9dgMezp4gIqudo6XOehEdi9w8a4wVnW3ja9s7dpzGsnrINv2QKootB0al9xe1AwDu3pkz30Qk5AH/f0BA0dysLQOAOIQPt2SgLtoIz/wtulXw5zGbSFNbFkmw5s660lcEhd18tVcQaYFJpaRZ/dtl4G4LkeNO1nvmASezAPKgh9b5pRWyhRCAZmBrax533stxeA/n0V6Fwq0LlUoHPpgtAbPAD4mg4nwsvcLgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSetText.Target>
+              </uix:NSetText>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Tipo'" sap:VirtualizedContainerService.HintSize="721.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="211add8e-103d-4185-8778-ebe9b4562bd3" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://web2.miprosegur.com/corpointweb/main.do" CvElementArea="69, 302, 19, 23" CvTextArea="40, 305, 28, 16" CvTextArgument="Tipo" CvType="ArrowButton" DesignTimeRectangle="40, 304, 47, 19" DesignTimeScaleFactor="1.25" ElementType="ArrowButton" FriendlyName="'Tipo'" Guid="9494e0ce-f706-49ec-885d-a8d28a67c322" InformativeScreenshot="defd8b2e6a71d46196a515df86e237a6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido a la solución de Cash &amp;amp; Logistics' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="Nombre dispositivo" CvType="Text" DesignTimeRectangle="23, 269, 124, 20" ElementType="Button" FriendlyName="'Nombre dispositivo'" FullSelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl id='entitySearchByBtnIdext-gen264' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='ext-gen379' tableRow='2' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl id='entitySearchByBtnIdext-gen264' tag='TABLE' /&gt;&lt;webctrl id='ext-gen379' type='button' tag='BUTTON' class='x-btn-text ' aaname='Nombre dispositivo' check:innerText='Nombre dispositivo' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIAAAAAYCAYAAAAyC/XlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALTSURBVGhD7ZdNbuMwDIXnTr5UfJDAZwnScxRoDlGgPcEspmuVkkiJPzJtpwjaqbR4QC1RFPn42Wj+/P33EYb61QCgcw0AOtcAoHMNADrXAKBzDQA61wCgczkAvIfLPIVpfgqveu9lCdO0hGe9/mXdwnmawvmltfcYPS/Q43Izf3+HXq9z9Tt6zLx/VG3bAMBATtd3ufdLAfhRUgA8SpsAnJc47Dlc3tieAaDCksQMTVTDczIa9+OA07qJRwDSnbjHTXh7Cid4vlAuPCdy6Vq1Yo4Su8BdNY+EIddS8pb1HHe63ljP+s51P7y85QuQ/KWY7HOpLdWv74s565r0w39RtwGAYaXL+SAEANhsaUQ+UzH0VpfiKF40RObUosXdODz+RSqm4bP7dcLz5QtDRmMtFYDcQ71HPqc4k4d68Pzw84peYk7W13ptMjb7W/vXz1q7AKDBlEu5yfxvEhuqGZAh2N5TjNXx5qwknxTNEgahTC2gauyGyUz8TBaLd/3w8+4DwPZR+234t9HLTgBAqTE0mzXZMpUPpg0AN4jf0xooa0oDkJ7BmIZaDdvBYX0GANhLPWI+1V81XK7Fs1t+eHnFWQcA6QPLrf1hZ78OACgVEYv6UQDYhtckTEStAkBKd8B6FIu7GwBaa+TdDQB/q3ncih+tekmHAKBhnGYolIbIYChxrJDjAKg7eVOmwUa8o9ZwuLHSZCXWp41TA3H8qGdQLH4/ADU2/kNch9vyg9VW1qoOAgBKBUMxpckcp+mk53sAqPEqd8PIlF/k86BQe9QL5q8m53u5aQYUXocYuueHn/cIANmLWIfsVfth/ZE6DgAoG2CHmMGQhR4HAIy9EmQgc9a+SbmeqvbwUcy4mDv9pMR6hck8DmPlMOAnZNnXNa374eWVXuHLgLkNAOUOO9w8dMzvDD/KAWBoTXYY/68GAHdoANC5BgBDv0YDgM41AOhaH+ETuFkmSgGi66UAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="721.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'unchecked'" sap:VirtualizedContainerService.HintSize="721.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="211add8e-103d-4185-8778-ebe9b4562bd3" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://web2.miprosegur.com/corpointweb/corpointHome.mvc?CLENT_CSRF_TOKEN=c99fed47aa4c4704b6ef6495ec7dc424&amp;mainContainer=true" CvType="CheckBox" DesignTimeRectangle="39, 356, 16, 16" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FriendlyName="'Checkbox'" FullSelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl id='typeDeposit' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl id='typeDeposit' tag='INPUT' type='checkbox' class=' x-form-checkbox x-form-field' aaname='Depósito' /&gt;" Guid="e82eda3a-d73f-4bfc-8627-616824ae200e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACiSURBVDhP7ZQxCsUgEET/qa1FkjrgERISPITYpsoJtNXaG8xnQkpFA+mSgal8+2QL/eWc8WTfLEwpYds2jOMIIUSz5Iwx51xROM8zlFJwziGE0Cw58uu6loU8tNbiTsgPw1AWcg3v/YX2hTznqkKucifkP+EnfFIopcS+7xfaF/KcKwqXZcE0TTiO47y5VXLkq285xgit9blCb8lXf5tnmvEHzZSxifRKVwQAAAAASUVORK5CYII=" InformativeScreenshot="efe213621aa3a84878cf6cb691199d9d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido a la solución de Cash &amp;amp; Logistics' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="Deposito" CvType="Text" DesignTimeRectangle="60, 361, 54, 15" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl id='ext-gen248' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl id='ext-gen248' tag='LABEL' type='' class='x-form-cb-label' aaname='Depósito' check:innerText='Depósito' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAATCAYAAADBGB7WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGaSURBVFhH7ZY9joQwDIW5X3bOFGnukYZrpNi5RioKDgANovSSf9sJCDTM7iJRPGkSB+d9tsXQjOMINQ3DAH3fwzRNMM9z9cyVdIPeoBfV34FqCU3TgNSV2AeEQDXI5WJ7OdUXtN35oFoegzRKQCMUGLu2RYq/d4qBClDGr1NHv58L7CPtnyMD5p18HwFdRrdrHywx677UYd93SigNSsR4zullUIw+u5U3dTSMvJcEjeOV/ahdoHPXgkgPezN57LxxoYxbW1B7WYo7YzFvgEwAeE3z8PXW6HpIDk1h94HOrxRzSUgXFhmVCuFASRwZdtCs2u5Zm5uDUq2D8sJblbkOg8aOlcqg3GyEJ2aT0L14LNm5VdBUqHzWivs4PLplx6jeAo17znwADnf9Cih+GdXNZpWF2Du6aC8KnV8Fdb7PGN3i78UnxkmwCQeKjRM4byAXAq9Lc7ho66AhhgrI11YM1JrkesKLfxnh0bJCl3pzEuXi3QpwMY67v5GXgCavObeHi8+yqVmEQKnoy2j/l1E5uv9DN+gNekmN8AOOV6OSIaTYPAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'unchecked'" sap:VirtualizedContainerService.HintSize="721.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="211add8e-103d-4185-8778-ebe9b4562bd3" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://web2.miprosegur.com/corpointweb/corpointHome.mvc?CLENT_CSRF_TOKEN=c99fed47aa4c4704b6ef6495ec7dc424&amp;mainContainer=true" CvType="CheckBox" DesignTimeRectangle="39, 386, 16, 16" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FriendlyName="'Checkbox'" FullSelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl id='typePickup' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl id='typePickup' tag='INPUT' type='checkbox' class=' x-form-checkbox x-form-field' aaname='Recogida/Pickup' /&gt;" Guid="83f3ee02-c8ec-4abd-b01b-4d2fe781a397" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACiSURBVDhP7ZQxCsUgEET/qa1FkjrgERISPITYpsoJtNXaG8xnQkpFA+mSgal8+2QL/eWc8WTfLEwpYds2jOMIIUSz5Iwx51xROM8zlFJwziGE0Cw58uu6loU8tNbiTsgPw1AWcg3v/YX2hTznqkKucifkP+EnfFIopcS+7xfaF/KcKwqXZcE0TTiO47y5VXLkq285xgit9blCb8lXf5tnmvEHzZSxifRKVwQAAAAASUVORK5CYII=" InformativeScreenshot="ca815bfcbd979ab312cba12b7a276c7b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido a la solución de Cash &amp;amp; Logistics' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="Recogida/Pickup" CvType="Text" DesignTimeRectangle="60, 391, 103, 15" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl id='ext-gen250' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl id='ext-gen250' tag='LABEL' type='' class='x-form-cb-label' aaname='Recogida/Pickup' check:innerText='Recogida/Pickup' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGsAAAATCAYAAACXzvOgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALQSURBVGhD7Vg7jtswENX9FN8nnYD4HAQW7lKmVhFfIAdQky18ALsRXE44JIecGY5kaYvYMlQ82ML83xvS2m1utxtYuF6vcLlcYBxHuN/vps+O/4tdrA1hF2tD2MXaEHaxNgQmVg9d00Bj4XgWQc/A4FpoWgeDYaPeu96yTaDvoOl6/3167pxvcNA2LbiBxVtY6vdFKLFKoXKyfsPRN966IQe9HtaL1XfkL+fOCMSvXIDnizXC5+mgtlptY9hQskUiyoZ20DNbOCETtrDtZPP1HOZJufXJEnm6Tok1gGuTLUEuG/ZPtSfE8sA5QlwlwsT82i/NY+dIPKXYWKtnfdc9fUGs2KgmhsgwSU3PkeAikHjWm0zCGWLpPLQcMTYJxRYo+isSs32tWHJe8cz9Qv8s7wKxygweOt5j9TUYBmdEBIRGkDwtJIdlK4PWeSXpRSxNFmKurociCnOV+AmxOFmVCGVRBMivx0/VzxKxjPn5nIteMA6nzxxAG1DDD2A0lDFhw3zYEH1qWy3WtOhaLNkr1UZf3sf03Dkf6730QfEMwY/ilaALxJqbHzF7sn59x6I/4Mxe3XUCgRcRK8QhYUQqr43fBdlybhMsfolY2EfFkzE/93k0P+LBNfgHPr75gMMpNzfbrEnknK0c9ZBXLEG01WKVmOLLcxvkK7LrWOWvwYlecg2iHxOusiV/LZY1P+/18W/W3w84+KIlUSSGJ+ECVmKy4YKNDSqe9XAhzhJL5kRbGDTHcuHKM12D6FtsZJckVhBE1yRmopUgcl7FW5pXiMX7MJZiwQvGCPfzMZBRFSKok0bkRUgi4gBkk81kgRA+J766U00hFj0n39Y5KRDPE+oTUT/9p6q5WixEzJdrUF+Vn7wd9Hw9zsDFSn+ClL4pTwQTS0KI9aR/N+EAfIPfGfl0GjbCy4ilT069pe+NTYmVr4yZa+CdsTGxdszjBv8A1Abq8A+yPO4AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Ir'" sap:VirtualizedContainerService.HintSize="721.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="211add8e-103d-4185-8778-ebe9b4562bd3" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://web2.miprosegur.com/corpointweb/corpointHome.mvc?CLENT_CSRF_TOKEN=c99fed47aa4c4704b6ef6495ec7dc424&amp;mainContainer=true" CvElementArea="1201, 264, 71, 31" CvTextArea="1231, 272, 11, 12" CvTextArgument="Ir" CvType="Button" DesignTimeRectangle="1206, 269, 62, 20" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Ir'" FullSelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl id='ext-comp-1039' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='ext-gen189' tableRow='2' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl id='ext-comp-1039' tag='TABLE' /&gt;&lt;webctrl id='ext-gen189' type='button' tag='BUTTON' class='x-btn-text ' aaname='      Ir      ' check:innerText='Ir' /&gt;" Guid="4404393b-9411-4fa2-84fa-ca2f62967ae2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEIAAAAYCAYAAABOQSt5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFySURBVFhH7ZhJcoMwEEV1Jy7kYxguwiVim6FSIWYGb1xUYTN4gMt0JEE7IWiL4oq8eItu/c1/CzEQLwjh/cODKEmUg/Vm/cu6BeLtfTgej1CWpXKw3qy/HydAqqriy+v1qhysN+sfxDEQtHM+n5UDu38GwbeI0+mkHNh9T+8JgkuRsf8OduciRAHV8MPoJYIxEcFuT2ls16Bpa9iKziQyEYHLuq7lsRtE7ERnEsHuQUQfn7hsmkYelk5F6GCNs6VroJsmrDSN7ldgHn7lFwK7cxGiwOIIRPycZROyN8u2bUE6KGKcuQjdmuck8RIxMhFxuVzkYQ8i7HG2uQh7nluYhwj6JUpwKfooWQzHoCIMcMbZMagIw5nnFga7R0kKRBRYnCcRgUQpFXG73UA67iDCHWeXi3DnOUnEafZHIp6MiYj7/a4cDxEZFYHLruuUA7snWQ5EFFCNJKci+r4H1UnzA5CiKPjvqqZplYP1Zv3fNhv4AsOCRLQczmg2AAAAAElFTkSuQmCC" InformativeScreenshot="eebc48cc7d04d4c9548547315ea2ac03.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido a la solución de Cash &amp;amp; Logistics' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DelayBetweenPages="10" DisplayName="Extraer datos de tabla" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Fecha'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='DateColumnFormat' Format='dd/MM/yyyy HH:mm:ss' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Nombre de entidad'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Crashier Id'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Cajero'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='Tipo'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column5' Name='Origen'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column6' Name='Descripción'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column7' Name='Divisa'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column8' Name='Nro de elementos'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column9' Name='Importe1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='NumberColumnFormat' DecimalSeparator=',' ThousandsSeparator='.' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column10' Name='Importe de recogida'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='NumberColumnFormat' DecimalSeparator=',' ThousandsSeparator='.' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column11' Name='Id recaudacion'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column12' Name='Fecha contable'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column13' Name='Canal'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column14' Name='Bar code'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column15' Name='Strap seal code'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column16' Name='Recaudador'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;webctrl tag='td' idx='8' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;webctrl tag='td' idx='9' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;webctrl tag='td' idx='10' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column5' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;webctrl tag='td' idx='11' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column6' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;webctrl tag='td' idx='12' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column7' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;webctrl tag='td' idx='13' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column8' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;webctrl tag='td' idx='14' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column9' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;webctrl tag='td' idx='15' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column10' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;webctrl tag='td' idx='16' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column11' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;webctrl tag='td' idx='17' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column12' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;webctrl tag='td' idx='18' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column13' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;webctrl tag='td' idx='19' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column14' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;webctrl tag='td' idx='20' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column15' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;webctrl tag='td' idx='21' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column16' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='table' idx='1' /&gt;&lt;webctrl tag='tbody' idx='1' /&gt;&lt;webctrl tag='tr' idx='1' /&gt;&lt;webctrl tag='td' idx='22' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="721.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" InteractionMode="Simulate" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="211add8e-103d-4185-8778-ebe9b4562bd3" Version="V3">
+                <uix:NExtractData.NextLink>
+                  <uix:TargetAnchorable BrowserURL="https://web2.miprosegur.com/corpointweb/corpointHome.mvc?CLENT_CSRF_TOKEN=7afe96983ab84c3cb354af0114d814f2&amp;mainContainer=true" CvType="Icon" DesignTimeRectangle="240, 1006, 20, 20" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'BUTTON ext-gen95'" FullSelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl id='ext-comp-1133' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='ext-gen95' tableRow='2' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl id='ext-comp-1133' tag='TABLE' /&gt;&lt;webctrl id='ext-gen95' type='button' tag='BUTTON' class='x-btn-text x-tbar-page-next' aaname=' ' /&gt;" Guid="cbe96c3c-0a38-446a-8bac-4f52f52eadcf" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFmSURBVEhL7ZQ7T8JQGIb9u4xNmDrIQJBOhFSSsqg0kYvQUsW2FKSpYBj4AypY1CAiCSYyyPza08SFHD+qkY3hmb7Lc857mu4tP1fYJjvBRkjB0PfxNHnh1qJCCq57Pdz0+3ievnLrUSAFXreLYrEIy7ax+FhyezZBClzPg+M46AU3qdfreFu8c/soSMGV66LVamEwGKDZbELTdYzGj9zenyAFTrsN0zTRD96BCVRVhWnZuB2OuP08SIEdxMOi6XQ6MAwDlUoFsiyjFtzk7sHnzqxDCi4tC9VqNYxJ0zRks1kkk0mIoojDXI47sw4pOG80wljK5XK4PJVKIRaL4bigYjqfc2fWIQV6EIuiKMjn8+HJ2fLTUgn3EeNhkAKWdSaTgSRJEAQBRyeFXy1nkIKzWi08+X4igYN0GpPZjNtHQQpKwVcTj8fD5bx6FEgBy9u4aPzp5N+QApb3Vv+m/8FOsJEtC1b4AiMjaTeACyi9AAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido a la solución de Cash &amp;amp; Logistics' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NExtractData.NextLink>
+                <uix:NExtractData.Target>
+                  <uix:TargetAnchorable BrowserURL="https://web2.miprosegur.com/corpointweb/corpointHome.mvc?CLENT_CSRF_TOKEN=7afe96983ab84c3cb354af0114d814f2&amp;mainContainer=true" DesignTimeRectangle="16, 403, 1870, 515" DesignTimeScaleFactor="1.25" FriendlyName="'09/11/2023 09:07:27Juev…'" FullSelectorArgument="&lt;webctrl id='ext-gen14' tag='IFRAME' /&gt;&lt;webctrl id='ext-gen71' tag='DIV' /&gt;" Guid="003fab6b-5d98-4498-bdf4-2d22663cdaad" InformativeScreenshot="6a9bb1df0d42dc8a14d531f9847f6fc7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido a la solución de Cash &amp;amp; Logistics' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NExtractData.Target>
+              </uix:NExtractData>
+              <ui:OutputDataTable Text="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="Tabla de datos de salida" sap:VirtualizedContainerService.HintSize="721.6,80.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" />
+              <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="PROCESO EXCEL" sap:VirtualizedContainerService.HintSize="721.6,3341.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                <ueab:ExcelProcessScopeX.Body>
+                  <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="SEC" sap:VirtualizedContainerService.HintSize="688,3255.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="625.6,3143.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="\\sys-fs\CORP\WorkGroup\ADM&amp;FINANZAS\05 - FINANZAS\17.PAGOS Y TRANSFERENCIAS\2023 - PROSEGUR\PROSEGUR 2.0.xlsx">
+                        <ueab:ExcelApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,2873.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="sd:DataTable" Name="BaseFinal1" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ueab:WriteRangeX Append="True" Destination="[Excel.Sheet(&quot;Base&quot;)]" DisplayName="ANEXAR DATOS ULTIMO DIA" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="529.6,160" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[ExtractDataTable]" />
+                              <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="529.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                              <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;BaseFinal&quot;)]" DisplayName="COPIAR BASE A HOJA DE FILTRO" sap:VirtualizedContainerService.HintSize="529.6,241.6" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_1" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;Base&quot;)]" Transpose="False" />
+                              <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="529.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                              <ueab:FilterX ClearFilter="False" ColumnName="Tipo de transacción" DisplayName="FILTRO POR TIPO DE TRANSACCION" HasHeaders="True" sap:VirtualizedContainerService.HintSize="529.6,170.4" sap2010:WorkflowViewState.IdRef="FilterX_1" Range="[Excel.Sheet(&quot;BaseFinal&quot;)]">
+                                <ueab:FilterX.FilterArgument>
+                                  <ueabf:FilterArgument Mode="Basic">
+                                    <ueabf:FilterArgument.AdvancedFiltersArgument>
+                                      <ueabf:AdvancedFilterArgument LogicalOperator="And">
+                                        <ueabf:AdvancedFilterArgument.Condition1>
+                                          <ueabf:AdvancedFilterCondition Value="{x:Null}" Operator="NONE" />
+                                        </ueabf:AdvancedFilterArgument.Condition1>
+                                        <ueabf:AdvancedFilterArgument.Condition2>
+                                          <ueabf:AdvancedFilterCondition Value="{x:Null}" Operator="NONE" />
+                                        </ueabf:AdvancedFilterArgument.Condition2>
+                                      </ueabf:AdvancedFilterArgument>
+                                    </ueabf:FilterArgument.AdvancedFiltersArgument>
+                                    <ueabf:FilterArgument.BasicFiltersArgument>
+                                      <ueabf:BasicFilterArgument>
+                                        <ueabf:BasicFilterArgument.BasicFilters>
+                                          <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
+                                            <InArgument x:TypeArguments="x:String">Recogida/Pickup</InArgument>
+                                          </scg:List>
+                                        </ueabf:BasicFilterArgument.BasicFilters>
+                                      </ueabf:BasicFilterArgument>
+                                    </ueabf:FilterArgument.BasicFiltersArgument>
+                                  </ueabf:FilterArgument>
+                                </ueab:FilterX.FilterArgument>
+                              </ueab:FilterX>
+                              <ueab:FilterX ClearFilter="False" ColumnName="Importe" DisplayName="FILTRO IMPORTE" HasHeaders="True" sap:VirtualizedContainerService.HintSize="529.6,170.4" sap2010:WorkflowViewState.IdRef="FilterX_2" Range="[Excel.Sheet(&quot;BaseFinal&quot;)]">
+                                <ueab:FilterX.FilterArgument>
+                                  <ueabf:FilterArgument Mode="Basic">
+                                    <ueabf:FilterArgument.AdvancedFiltersArgument>
+                                      <ueabf:AdvancedFilterArgument LogicalOperator="And">
+                                        <ueabf:AdvancedFilterArgument.Condition1>
+                                          <ueabf:AdvancedFilterCondition Value="{x:Null}" Operator="NONE" />
+                                        </ueabf:AdvancedFilterArgument.Condition1>
+                                        <ueabf:AdvancedFilterArgument.Condition2>
+                                          <ueabf:AdvancedFilterCondition Value="{x:Null}" Operator="NONE" />
+                                        </ueabf:AdvancedFilterArgument.Condition2>
+                                      </ueabf:AdvancedFilterArgument>
+                                    </ueabf:FilterArgument.AdvancedFiltersArgument>
+                                    <ueabf:FilterArgument.BasicFiltersArgument>
+                                      <ueabf:BasicFilterArgument>
+                                        <ueabf:BasicFilterArgument.BasicFilters>
+                                          <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
+                                            <InArgument x:TypeArguments="x:String">
+                                              <Literal x:TypeArguments="x:String" Value="" />
+                                            </InArgument>
+                                          </scg:List>
+                                        </ueabf:BasicFilterArgument.BasicFilters>
+                                      </ueabf:BasicFilterArgument>
+                                    </ueabf:FilterArgument.BasicFiltersArgument>
+                                  </ueabf:FilterArgument>
+                                </ueab:FilterX.FilterArgument>
+                              </ueab:FilterX>
+                              <ueab:DeleteRowsX RowPositions="{x:Null}" DeleteRowsOption="Visible" DisplayName="BORRAR VISIBLES" HasHeaders="True" sap:VirtualizedContainerService.HintSize="529.6,139.2" sap2010:WorkflowViewState.IdRef="DeleteRowsX_1" Range="[Excel.Sheet(&quot;BaseFinal&quot;)]" />
+                              <ueab:FilterX ColumnName="{x:Null}" FilterArgument="{x:Null}" ClearFilter="True" DisplayName="BORRAR FILTROS PARA QUE LA BASE QUEDE OK" HasHeaders="True" sap:VirtualizedContainerService.HintSize="529.6,170.4" sap2010:WorkflowViewState.IdRef="FilterX_3" Range="[Excel.Sheet(&quot;BaseFinal&quot;)]" />
+                              <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="529.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                              <ueab:SortX DisplayName="ORDENAR FILTRO" HasHeaders="True" sap:VirtualizedContainerService.HintSize="529.6,284.8" sap2010:WorkflowViewState.IdRef="SortX_1" Range="[Excel.Sheet(&quot;BaseFinal&quot;)]">
+                                <ueab:SortX.Body>
+                                  <ActivityAction>
+                                    <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ueab:SortColumnX ColumnName="Nombre de entidad" DisplayName="Sort By Column" sap:VirtualizedContainerService.HintSize="382.4,62.4" sap2010:WorkflowViewState.IdRef="SortColumnX_1" SortDirection="Ascending" />
+                                      <ueab:SortColumnX ColumnName="Fecha" DisplayName="Sort By Column" sap:VirtualizedContainerService.HintSize="382.4,62.4" sap2010:WorkflowViewState.IdRef="SortColumnX_2" SortDirection="Ascending" />
+                                    </Sequence>
+                                  </ActivityAction>
+                                </ueab:SortX.Body>
+                              </ueab:SortX>
+                              <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="529.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="PEGAR EN BASE DE ANALISIS" sap:VirtualizedContainerService.HintSize="529.6,623.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="\\sys-fs\CORP\WorkGroup\ADM&amp;FINANZAS\05 - FINANZAS\17.PAGOS Y TRANSFERENCIAS\2023 - PROSEGUR\Archivo PROSEGUR V1.xlsx">
+                                <ueab:ExcelApplicationCard.Body>
+                                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel2" />
+                                    </ActivityAction.Argument>
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,353.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ueab:CopyPasteRangeX DestinationRange="[Excel2.Sheet(&quot;Base&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="433.6,241.6" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_2" PasteOptions="All" SourceRange="[Excel.Sheet(&quot;BaseFinal&quot;)]" Transpose="False" />
+                                    </Sequence>
+                                  </ActivityAction>
+                                </ueab:ExcelApplicationCard.Body>
+                              </ueab:ExcelApplicationCard>
+                            </Sequence>
+                          </ActivityAction>
+                        </ueab:ExcelApplicationCard.Body>
+                      </ueab:ExcelApplicationCard>
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelProcessScopeX.Body>
+              </ueab:ExcelProcessScopeX>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 1920, 1030" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="d35084cddb86e9d040cd37328f3fab6d.jpg" Selector="&lt;html app='chrome.exe' title='Bienvenido a la solución de Cash &amp;amp; Logistics' /&gt;" Title="Bienvenido a la solución de Cash &amp; Logistics" Url="https://web2.miprosegur.com/corpointweb/" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
